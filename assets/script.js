@@ -35,7 +35,7 @@ function formatCurrency(value) {
 function fixValue(value) {
   let fixedValue = value.replace(",", ".");
   let floatValue = parseFloat(fixedValue);
-  if (floatValue == NaN) {
+  if (isNaN(floatValue)) {
     floatValue = 0;
   }
   return floatValue;
